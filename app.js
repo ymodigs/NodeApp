@@ -1,5 +1,26 @@
   
-const express = require('express')
+var mysql = require('mysql');
+var connection = mysql.createConnection({
+	host	: 'localhost',
+	user 	: 'root',
+	password: '',
+	database: 'demo'
+});
+
+
+connection.connect();
+
+connection.query('Select * from test', function(err, rows, fields) {
+	if (!err)
+			console.log('The Solution is:', rows);
+	else
+			console.log('Error while performing query.');
+});
+
+connection.end();
+
+
+/*const express = require('express')
 const app = express()
 
 app.locals.points = "8,713";
@@ -12,7 +33,7 @@ app.listen(3000, function () {
   console.log('Example app listening on port 3000!')
 })
 
-
+*/
 
 
 

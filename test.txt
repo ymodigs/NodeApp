@@ -3,3 +3,10 @@ Core is good for a health
 
 Informtion gathering:
 https://www.youtube.com/watch?v=nuw48-u3Yrg
+
+1. https://www.youtube.com/watch?v=Do_Hsb_Hs3c (node.js + Mongo DB)
+	https://www.youtube.com/watch?v=xDCKcNBFsuI
+	https://www.youtube.com/watch?v=l5AXcXAP4r8	
+
+2. node.js + SQL
+	https://www.youtube.com/watch?v=XuLRKMqozwA
