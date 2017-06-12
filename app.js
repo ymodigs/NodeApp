@@ -1,15 +1,30 @@
+//Simple HTTP and File server
+
+
+
+
+
+
+
 /* object name same as module name , Core module just right down the name . for your custom module give a path ./NameoftheModule
 */
-var fs = require('fs');
+/*var fs = require('fs');
 fs.writeFileSync("test.txt", "Core is good for a health");
 console.log(fs.readFileSync("test.txt").toString());
+*/
 
+/*var path = require('path');
+var websiteHome = "Document/GitHub//yeshamodi/index.html";
+var websiteAbout = "Document/GitHub//yeshamodi/about.html";
 
+console.log(path.normalize(websiteHome));
+console.log(path.dirname(websiteAbout));
+console.log(path.basename(websiteHome));
+console.log(path.extname(websiteAbout));
 
-
-
-
-
+console.log(__dirname);
+console.log(__filename);
+*/
 
 
 
