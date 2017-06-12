@@ -1,5 +1,41 @@
-//Simple HTTP and File server
+var connect = require('connect');
+var http = require('http');
 
+var app = connect();
+
+/*function doFirst(request, response, next) {
+	console.log("Yesha");
+	next();
+}
+
+
+function doSecond(request, response, next) {
+	console.log("Mishrak");
+	next();
+}
+app.use(doFirst);
+app.use(doSecond);
+*/ 
+
+function profile(request, response){
+	console.log('User Requested Profile');
+}
+
+function forum(request, response){
+	console.log('User Requested forum');
+}
+
+app.use('/profile', profile);
+app.use('/forum', forum);
+http.createServer(app).listen(8888);
+console.log("Server is running...");
+
+
+
+
+
+//Simple HTTP and File server
+	//Checkout server.js
 
 
 
