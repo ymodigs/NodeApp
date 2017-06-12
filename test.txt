@@ -10,3 +10,9 @@ https://www.youtube.com/watch?v=nuw48-u3Yrg
 
 2. node.js + SQL
 	https://www.youtube.com/watch?v=XuLRKMqozwA
+
+
+ORDBMS + Postgre
+
+http://www.cs.sfu.ca/CourseCentral/354/zaiane/material/notes/Chapter8/node3.html
+http://people.cs.pitt.edu/~chang/156/19oodb.html
