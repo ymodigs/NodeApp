@@ -1,7 +1,29 @@
-var connect = require('connect');
+  
+const express = require('express')
+const app = express()
+
+app.locals.points = "8,713";
+
+app.get('/', function (req, res) {
+  res.send('Hello World!')
+})
+
+app.listen(3000, function () {
+  console.log('Example app listening on port 3000!')
+})
+
+
+
+
+
+
+
+
+
+/*var connect = require('connect');
 var http = require('http');
 
-var app = connect();
+var app = connect();*/
 
 /*function doFirst(request, response, next) {
 	console.log("Yesha");
@@ -17,7 +39,7 @@ app.use(doFirst);
 app.use(doSecond);
 */ 
 
-function profile(request, response){
+/*function profile(request, response){
 	console.log('User Requested Profile');
 }
 
@@ -28,7 +50,7 @@ function forum(request, response){
 app.use('/profile', profile);
 app.use('/forum', forum);
 http.createServer(app).listen(8888);
-console.log("Server is running...");
+console.log("Server is running...");*/
 
 
 
