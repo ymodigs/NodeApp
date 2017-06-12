@@ -1,4 +1,43 @@
-  
+var express = require('express'),
+	path = require('path'),
+	bodyParser = require('body-parser'),
+	cons = require('consolidate'),
+	dust = require('dustjs-helpers'),
+	pg = require('pg'),
+	app = express();
+
+
+// DB Connect String
+var connect = "postgres://postgres:specsy@localhost/postgres";
+
+// Assign Dust Engine to .dust Files
+app.engine('dust', cons.dust);
+
+//Set Default Ext .dust
+app.set('view engine', 'dust');
+app.set('views', __dirname + '/views');
+
+//Set public Folder
+app.use(express.static(path.join(__dirname, 'public')));
+
+//Body Parser Middleware
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({	extended: false}));
+
+app.get('/', function (req, res) {
+	console.log('Running with postgres'); 
+});
+
+
+//Server
+app.listen(3000, function(){
+	console.log('Server started on Port 3000');
+})
+
+ 
+
+
+/*  
 var mysql = require('mysql');
 var connection = mysql.createConnection({
 	host	: 'localhost',
@@ -17,7 +56,7 @@ connection.query('Select * from test', function(err, rows, fields) {
 			console.log('Error while performing query.');
 });
 
-connection.end();
+connection.end();*/
 
 
 /*const express = require('express')

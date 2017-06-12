@@ -21,6 +21,15 @@
   ],
   "author": "Yesha Modi",
   "license": "ISC",
+  "dependencies": {
+    "body-parser": "*",
+    "consolidate": "*",
+    "dust": "*",
+    "dustjs-helpers": "*",
+    "dustjs-linkedin": "*",
+    "express": "*",
+    "pg": "*"
+  },
   "bugs": {
     "url": "https://github.com/ymodigs/NodeApp/issues"
   },
