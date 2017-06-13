@@ -1,4 +1,4 @@
-var express = require('express'),
+/*var express = require('express'),
 	path = require('path'),
 	bodyParser = require('body-parser'),
 	cons = require('consolidate'),
@@ -15,12 +15,12 @@ app.engine('dust', cons.dust);
 
 //Set Default Ext .dust
 app.set('view engine', 'dust');
-app.set('views', __dirname + '/views');
+app.set('views', __dirname + '/views'); 
 
 //Set public Folder
 app.use(express.static(path.join(__dirname, 'public')));
 
-//Body Parser Middleware
+//Body Parser Middleware 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({	extended: false}));
 
@@ -34,7 +34,8 @@ app.listen(3000, function(){
 	console.log('Server started on Port 3000');
 })
 
- 
+
+ */
 
 
 /*  
